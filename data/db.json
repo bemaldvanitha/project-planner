@@ -23,6 +23,12 @@
       "title": "create nativescript app",
       "details": "lorem ipsum",
       "complete": true
+    },
+    {
+      "title": "complete react project",
+      "details": "supper cool project",
+      "complete": true,
+      "id": 5
     }
   ]
 }
