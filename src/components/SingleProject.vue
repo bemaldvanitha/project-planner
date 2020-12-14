@@ -4,7 +4,9 @@
     <div class="actions">
       <h3 @click="toggleDetailVisibility">{{ project.title }}</h3>
       <div class="icons">
-        <span class="material-icons">create</span>
+        <router-link :to="'/projects/' + project.id">
+          <span class="material-icons">create</span>
+        </router-link>
         <span @click="deleteProject" class="material-icons">delete</span>
         <span @click="toggleProjectState" class="material-icons tick">done_outline</span>
       </div>
@@ -58,7 +60,7 @@ export default {
       }).catch(err => {
         console.log(err);
       })
-    }
+    },
   }
 }
 </script>
